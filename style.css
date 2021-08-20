@@ -3,6 +3,7 @@ body {
     overflow-x: hidden;
     font-family: 'Urbanist', sans-serif;
     color: aliceblue;
+    background-color: orange;
 }
 
 .pink {
@@ -42,8 +43,34 @@ section {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     min-height: 400px;
     padding: 100px 20vw;
+}
+
+.curve {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+}
+
+.curve::before {
+    content: '';
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: orange;
+    transform: translate(85%, 60%);
+}
+
+.curve::after {
+    content: '';
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: pink;
+    transform: translate(-4%, 40%);
 }
