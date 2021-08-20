@@ -27,10 +27,15 @@ body {
 
 .yellow {
     background-color: yellow;
+    color: #000;
 }
 
 .brown {
     background-color: brown;
+}
+
+.darkblue {
+    background-color: darkblue;
 }
 
 section {
@@ -39,4 +44,6 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    min-height: 400px;
+    padding: 100px 20vw;
 }
